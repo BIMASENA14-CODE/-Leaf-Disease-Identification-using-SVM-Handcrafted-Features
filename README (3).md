@@ -11,7 +11,7 @@ Klasifikasi penyakit daun (3 kelas) menggunakan pipeline **Computer Vision klasi
 
 ---
 
-## 🎯 Hasil Akhir
+## Hasil Akhir
 
 | Metrik | Skor |
 |---|---|
@@ -32,7 +32,7 @@ Klasifikasi penyakit daun (3 kelas) menggunakan pipeline **Computer Vision klasi
 
 ---
 
-## 🧠 Pipeline
+##  Pipeline
 
 ```
 Citra Daun (RGB)
@@ -67,7 +67,7 @@ Kombinasi seluruh fitur terbukti jauh lebih baik dibanding fitur tunggal mana pu
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 Dataset: **Leaf Disease (NSDSR)** dari [Roboflow Universe — Roboflow 100](https://universe.roboflow.com/roboflow-100/leaf-disease-nsdsr), terdiri dari 3 kelas:
 
@@ -86,7 +86,7 @@ Dataset asli (format YOLOv8: train/valid/test) digabung kembali lalu **di-split 
 
 ---
 
-## 🛠️ Instalasi & Menjalankan
+## Instalasi & Menjalankan
 
 Notebook ini awalnya dikerjakan di **Google Colab**. Untuk menjalankan secara lokal:
 
@@ -114,25 +114,12 @@ Atau langsung buka di Google Colab:
 
 ---
 
-## 📁 Struktur Repo
 
-```
-.
-├── PCD_LeafDisease_SVM.ipynb   # Notebook utama (full pipeline)
-├── requirements.txt            # Daftar dependency
-├── README.md
-├── samples/                    # Contoh citra per kelas (untuk README)
-│   ├── mildew.jpg
-│   ├── rose_P01.jpg
-│   └── rose_R02.jpg
-└── model_output/                # (digenerate setelah run) model .pkl tersimpan
-    ├── svm_leaf_disease_pipeline.pkl
-    └── label_encoder.pkl
 ```
 
 ---
 
-## 📒 Isi Notebook
+## Isi Notebook
 
 1. Install & Import Library
 2. Mount Google Drive & Download Dataset (Roboflow)
@@ -150,7 +137,7 @@ Atau langsung buka di Google Colab:
 
 ---
 
-## 🔧 Tech Stack
+## Tech Stack
 
 - **OpenCV** & **scikit-image** — image processing & ekstraksi fitur (GLCM, LBP)
 - **scikit-learn** — SVM, preprocessing, evaluasi model
@@ -159,12 +146,12 @@ Atau langsung buka di Google Colab:
 
 ---
 
-## 📌 Catatan
+##  Catatan
 
 Proyek ini berfokus pada pendekatan **classical machine learning** (bukan deep learning/CNN) untuk menunjukkan bahwa kombinasi ekstraksi fitur warna dan tekstur yang tepat, dipasangkan dengan SVM, masih bisa mencapai akurasi tinggi (96.67%) pada tugas klasifikasi citra sederhana dengan dataset berskala kecil-menengah.
 
 ---
 
-## 📄 Lisensi
+##  Lisensi
 
 Proyek ini dibuat untuk keperluan akademik (tugas mata kuliah Pengolahan Citra Digital).
